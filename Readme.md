@@ -19,3 +19,16 @@ docker run \
     -p 6310 \
     reject
 ```
+
+## Docker-compose example
+See [docker-compose.yml](docker-compose.yml):
+
+```
+version: "3.4"
+
+services:
+  ippserver:
+    image: hedhyw/ippserver:0.2
+    ports:
+      - "127.0.0.1:6310:6310"
+```
